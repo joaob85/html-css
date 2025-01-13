@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+body {
+    background-color: #83E1AD;
+    margin: 0px;
+
+}
+
+/* AQUI FICA O CABECALHO */
+
+header {
+    height: 223px;
+    width: auto;
+    background-image: linear-gradient(to bottom, #3CD984, #1A5B38);
+    box-shadow: 7px 8px 10px rgb(0 0 0 / 47%)
+}
+
+header > h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.433);
+    color: white;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+    margin: 0px;
+}
+
+header > pre {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(255, 255, 255, 0.783);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+nav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+nav > a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.783);
+    margin-left: 20px;
+}
+
+nav > a:hover {
+    background-color: rgb(39, 32, 255);
+    border-radius: 5px;
+    padding: 3px 10px;
+
+}
+
+/* AQUI FICA O CORPO */
+
+main {
+    background-color: white;
+    width: 1000px;
+    margin: auto;
+    text-align: justify;
+    box-shadow: 0px 6px 9px 3px rgba(0, 0, 0, 0.433);
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px ;
+}
+
+span {
+    color: #1A5B38;
+    font-weight: bold;
+
+}
+
+a {
+    text-decoration: none;
+    color: #1A5B38;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p > a::after {
+    content: " \01F517";
+}
+
+.center {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.center1 {
+    display: block;
+    margin: auto;
+}
+
+section > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-indent: 25px;
+}
+
+section#historia > h1 {  /* Titulo Principal Corpo */
+    margin-top: 0px;
+    font-family: 'idroid', sans-serif;
+    color: #1A5B38;
+    font-size: 2em;
+    background-image: none;
+}
+
+section > h1 {    /* Titulo de Seccao */
+    font-family: 'idroid', sans-serif;
+    color: #1A5B38;
+    background-image: linear-gradient(to right, #83E1AD, white);
+    padding-left: 10px;
+}
+
+
+section#video {
+    background-color: #1A5B38;
+    padding: 20px 0px;
+
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    
+
+}
+
+section#extra {
+    background-color: white;
+}
+
+section#extra {
+    background-color: #c4edd7;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 47%)
+    
+}
+
+section#extra >  h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    color: white;
+    background-color: #2fb66e;
+    padding: 5px 10px;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+section#extra >  p{
+    padding: 5px 10px;
+    margin-bottom: ;
+}
+
+ul {
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section#extra >  section > ul {
+    display: inline-block;
+    padding: 0px 10px;
+    margin-right: 260px;
+}
+
+section#extra >  section > ul > li::before {
+    content: "\2713  ";
+}
+
+section#extra >  section > ul > li > a {
+    color: black;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1A5B38;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: small;
+    margin-top: 5px;
+    height: 30px;
+}
+
+footer > p {
+    padding-top: 5px;
+}
+
+footer > p > span {
+    font-style: italic;
+    color: #83E1AD;
+    font-size: 0.8em;
+}
+
+footer > p > a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white
+}
+
+footer > p > a::after {
+    content: none;
+}

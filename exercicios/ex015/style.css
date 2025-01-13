@@ -1,0 +1,18 @@
+ body {
+    background-color: rgb(126, 185, 252);
+}
+
+h1 {
+    color: brown;
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: burlywood;
+    font-size: larger;
+}
+
+p {
+    text-align: justify;
+}

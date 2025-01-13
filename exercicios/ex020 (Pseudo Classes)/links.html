@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:visited {
+            color: darkred;
+            
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a::after {
+            content: ' [link]';
+        }
+
+        p::before {
+            content: 'Site ';
+            color: crimson;
+        }
+
+        p::after {
+            content: ' Brito';
+            color: crimson;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizar Links</h1>
+    <ul>
+        <li><a href="https://www.record.pt/" target="_blank">Record</a></li>
+        <li><a href="https://www.abola.pt/" target="_blank">A Bola</a></li>
+        <li><a href="https://www.ojogo.pt/" target="_blank">O Jogo</a></li>
+    </ul>
+    <p>produzido por Joao</p>
+</body>
+</html>

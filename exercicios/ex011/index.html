@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente sumente o tamnho do navegador.</p>
+
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzir Musica</h1>
+    <p>Aprender a reproduzir um Mp3</p>
+    <audio preload="" controls loop autoplay>
+        <source src="midia/musica.mp3" type="audio/mpeg">
+        <source src="midia/musica.ogg" type="audio/ogg">
+        <source src="midia/musica.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador nao consegue reproduzir Audio. <a href="midia/musica.mp3">Clique aqui para descarregar o ficheiro Mp3</a></p>
+    </audio>
+
+    <h1>Reproduzir Video</h1>
+    <p>Aqui vai aparecer um video do youtube</p>
+    <iframe width="833" height="469" src="https://www.youtube.com/embed/DjOSM72cYac?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" title="Formatos de vídeo para seu site - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
