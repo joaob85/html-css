@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabelas</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .cnome {
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome" span="4">
+           
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <td scope="col">Nome</td>
+            <td scope="col">Sexo</td>
+            <td scope="col">Idade</td>
+            <td scope="col">Profissao</td>
+        </tr>
+        <tr>
+            <td>Jose Pedro</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Pedreiro</td>
+        </tr>
+
+        <tr>
+            <td>Laura Santos</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Cozinheira</td>
+        </tr>
+
+        <tr>
+            <td>Afonso Ribeiro</td>
+            <td>M</td>
+            <td>31</td>
+            <td>Futebolista</td>
+        </tr>
+
+        <tr>
+            <td>Junior Carlos</td>
+            <td>M</td>
+            <td>21</td>
+            <td>Estudante</td>
+        </tr>
+
+        <tr>
+            <td>Bianca Amena</td>
+            <td>F</td>
+            <td>51</td>
+            <td>Contabilista</td>
+        </tr>
+    </table>
+</body>
+</html>
