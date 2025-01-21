@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Teste Formularios</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <optgroup label="Kantao Zurich">
+                    <option value="GO">Gossau</option>
+                    <option value="WE">Wetzikon</option>
+                    <option value="US">Uster</option>
+                </optgroup>
+
+                <optgroup label="Kantao St. Gallen">
+                    <option value="GOS">Gossau SG</option>
+                    <option value="WES">Wetzikon SG</option>
+                    <option value="USS">Uster SG</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissao</label>
+            <input type="text" name="prof" id="iprof" list="lstprof" size="25" placeholder="-- Escolha a profissao --">
+            <datalist id="lstprof">
+                <option value="Administrador"></option>
+                <option value="Futebolista"></option>
+                <option value="Mecanico"></option>
+                <option value="Cozinheiro"></option>
+                <option value="Programador"></option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="15" placeholder="Escreva aqui a sua mensagem"></textarea>
+
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form> 
+</body>
+</html>
