@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/* Todas as outras versoes */
+
+/* Breakpoints 
+----------------
+Telemovel pequeno: ate 480px
+Telemovel medio: de 481px ate 767px
+Tablet: de 768px ate 1024px
+Desktop pequeno: de 1025px ate 1280px
+Grandes Ecras: de 1281px ate 1440px
+Extra Grandes: a partir de 1441px
+*/
+
+
+@media print {  /* Impressao */
+    body {
+        background-image: url(../imagens/back-print.jpg);  /* Desnecessario pois impressora nao imprime fundos de pagina */
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+        text-align: center;
+        
+    }
+
+    main > h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        content: "Conteudo impresso do site...";
+        text-decoration: underline;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {  /* Tablet */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main {
+        width: 500px;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+} 
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {     /* Portatil */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        width: 600px;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: block; }
+    img#tv { display: none; }
+} 
+
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {     /* Desktop */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; }
+} 
+
+@media screen and (min-width: 1441px) {     /* Ecras Extra-grandes */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 800px;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; }
+}  
