@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* Todas as outras versoes */
+
+/* Breakpoints 
+----------------
+Telemovel pequeno: ate 480px
+Telemovel medio: de 481px ate 767px
+Tablet: de 768px ate 1024px
+Desktop pequeno: de 1025px ate 1280px
+Grandes Ecras: de 1281px ate 1440px
+Extra Grandes: a partir de 1441px
+*/
+
+@media screen and (min-width: 768px) {
+    span#hamburger {
+        display: none;
+    }
+
+    menu#itens {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
